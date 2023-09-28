@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: #888;
+      padding: 10px 0;
+      height: 300px;
+      /* flex-direction: row;
+      flex-wrap: wrap; */
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: baseline;
+    }
+
+    .item {
+      width: 45px;
+      height: 45px;
+      background-color: aqua;
+      border: 1px solid blue;
+
+    }
+
+    .big {
+      font-size: 2rem;
+    }
+
+    .small {
+      font-size: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>ANTES DO CONTAINER</h3>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>
+  </div>
+  <h3>DEPOIS DO CONTAINER</h3>
+</body>
+
+</html>

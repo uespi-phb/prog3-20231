@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo #1</title>
+</head>
+
+<body>
+  <img index="0" src="images/logo-uespi.png" alt="Universidade Estadual do Piauí (UESPI)">
+  <script>
+    function onImgClick() {
+      const imageNames = ['uespi', 'bcc']
+      let imageIndex = this.getAttribute('index')
+
+      console.log(imageIndex)
+      imageIndex = (imageIndex == 0) ? 1 : 0
+      this.setAttribute('index', imageIndex)
+      this.setAttribute('src', `images/logo-${imageNames[imageIndex]}.png`)
+      this.setAttribute('alt', 'Bacharelado Ciência da Computação')
+      console.log(imageIndex)
+      console.log('--------')
+    }
+
+    function onLoad() {
+      console.log('Página carregada!')
+      const image = document.querySelector('img')
+      image.addEventListener('click', onImgClick)
+    }
+
+    window.addEventListener('load', onLoad)
+  </script>
+</body>
+
+</html>
