@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic List</title>
+  <style>
+    li {
+      /* display: inline; */
+      list-style-type: none;
+      width: 180px;
+      border: 2 solid black;
+      border-radius: 4%;
+      background-color: #d3d3d3;
+      padding: 2px 8px;
+      margin: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="interest">Interesse</label>
+  <input type="text" id="interest" name="interest">
+  <button type="button">Adicionar</button>
+  <ul>
+  </ul>
+  <script>
+    window.addEventListener('load', () => {
+      const btn = document.querySelector('button')
+      btn.addEventListener('click', addInterest)
+    })
+
+    function addInterest() {
+      const cancelIcon = '&#x2715;'
+      const textInput = document.querySelector('input')
+      const interestList = document.querySelector('ul')
+      const item = document.createElement('li')
+
+      item.innerHTML = `<span onclick="delInterest(event)">${cancelIcon}</span> ${textInput.value}`
+      interestList.appendChild(item)
+      textInput.value = ''
+    }
+
+    function delInterest() {
+      event.target.parentNode.remove()
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.message {
+  width: 300px;
+  width: 200px;
+  background-color: lightsalmon;
+  padding: 30px;
+  border: 2px solid salmon;
+  margin: 30px auto;
+  visibility: hidden;
+}
+
+.button {
+  text-align: center;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample #1/2</title>
+</head>
+
+<body>
+  <div>
+    <h1>Cabeçalho #1</h1>
+    <p>Prágrafo #1</p>
+    <p>Prágrafo #2</p>
+    <p>Prágrafo #3</p>
+  </div>
+  <div>
+    <h1>Cabeçalho #2</h1>
+    <p>Prágrafo #4</p>
+    <p>Prágrafo #5</p>
+  </div>
+  <div>
+    <h1>Cabeçalho #3</h1>
+    <p>Prágrafo #6</p>
+  </div>
+
+  <script>
+    const h1s = document.querySelectorAll('div > h1')
+    console.log(h1s)
+    for (let elem of h1s) {
+      console.log(elem.textContent)
+    }
+  </script>
+</body>
+
+</html>
