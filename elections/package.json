@@ -1,0 +1,11 @@
+{
+  "name": "elections",
+  "version": "1.0.0",
+  "description": "Elctions in Piaui State at 2022",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Eyder Rios",
+  "license": "ISC"
+}

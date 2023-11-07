@@ -1,0 +1,28 @@
+body {
+    font-family: Ubuntu, Verdana;
+}
+
+#content {
+    margin: 0 200px;
+    padding: 40px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#result-table {
+    margin: 40px auto;
+}
+
+tr th {
+    text-align: left;
+    padding-right: 15px;
+}
+
+tr td {
+    text-align: left;
+    padding-right: 15px;
+}
+
+tr :nth-child(3) {
+    text-align: right;
+}
