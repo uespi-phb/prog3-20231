@@ -1,11 +1,18 @@
 {
   "name": "elections",
   "version": "1.0.0",
-  "description": "Elctions in Piaui State at 2022",
+  "description": "Elections in Piaui State at 2022",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "nodemon backend/server.js"
   },
   "author": "Eyder Rios",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }

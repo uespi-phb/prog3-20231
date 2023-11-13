@@ -1,19 +1,19 @@
 
 function onNameChange(event) {
-
   const xhr = new XMLHttpRequest()
 
   xhr.open('POST', '/candidates', true)
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
   xhr.onload = (event) => {
     onNameResponse(xhr, event)
   }
-  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
   const body = {
     name: event.target.value
   }
   const json = JSON.stringify(body)
-  xhr.send(json)
+  xhr.send()
 }
 
 function onNameResponse(xhr, event) {
