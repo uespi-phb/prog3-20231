@@ -10,19 +10,29 @@ body {
 }
 
 #result-table {
+    display: none;
     margin: 40px auto;
 }
 
-tr th {
+th {
     text-align: left;
-    padding-right: 15px;
 }
 
-tr td {
+td {
     text-align: left;
-    padding-right: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
-tr :nth-child(3) {
+tfoot td {
     text-align: right;
+    font-weight: bold;
+}
+
+td:nth-child(4) {
+    text-align: right;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
